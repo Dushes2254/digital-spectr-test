@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 15px;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  width: 481px;
+  padding: 40px;
+  background-color: #F7F5F9;
+  border-radius: 12px;
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #6979F8;
+  padding: 13px;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 17px;
+}
+.btn:hover {
+  background-color: #854FC8;
+  transition: 0.3s;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  width: 401px;
+  margin-bottom: 25px;
+  padding: 14px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+}
+.form__input::placeholder {
+  color: #D0C9D6;
+}
+.form__input:focus {
+  outline: none;
+  border-color: #854FC8;
+}
